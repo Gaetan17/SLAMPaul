@@ -1,0 +1,26 @@
+public function ReducQF() {
+        if ($this->famQF < 500){
+            $this->simulReducQF = 0.1;
+        }
+    }
+
+    public function ReducFamilleNombreuse() {
+        if ($this->famNbEnfant = 1){
+            $this->simulReducFamilleNombreuse = 0;
+        } elseif ($this->famNbEnfant = 2) {
+            $this->simulReducFamilleNombreuse = 0.2;
+        } elseif ($this->famNbEnfant >= 3) {
+            $this->simulReducFamilleNombreuse = 0.4;
+        }
+    }
+
+    public function ReducDepartMultiple() {
+        if ($this->simulNbEnfPartant >= 1) {
+            $this->simulReducDepartMultiple = 0.1;
+        }
+    }
+
+    public function SousTotal() {
+        TODO;
+    }
+}
